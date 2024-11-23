@@ -12,6 +12,11 @@ module.exports = {
         foreground: "var(--foreground)",
       },
     },
+
+    fontFamily: {
+      tienne: ["Tienne"],
+      manrope:["Manrope"]
+    }
   },
   plugins: [],
 };
