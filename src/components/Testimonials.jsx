@@ -42,7 +42,7 @@ const Testimonials = () => {
           />
 
           <p className="text-[#FFFFFF] text-[12px] md:text-[25px] p-4">
-            Dr. Noshin's coaching truly helped me during my admission process!
+            Dr. Noshin&apos;s coaching truly helped me during my admission process!
             Her interview tips were so valuable, and I felt much more confident
             when facing the panel. I&apos;m now a proud student of Mayo College!
           </p>

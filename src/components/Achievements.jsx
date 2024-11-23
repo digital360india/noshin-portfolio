@@ -70,7 +70,7 @@ const Achievements = () => {
             <h4 className="text-sm font-semibold text-[#5F5F5F] leading-snug">
               <span className="text-[#A14622] font-bold">Vasundhra Goel</span>{" "}
               secured <span className="text-[#5F5F5F]">admission</span> to{" "}
-              <span className="font-bold">Welham Girl's School</span> with a{" "}
+              <span className="font-bold">Welham Girl&apos;s School</span> with a{" "}
               <br />
               <span className="text-[#A14622] font-bold">Perfect Score</span> in
               their entrance exam and an impressive personal interview.

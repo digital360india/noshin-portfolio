@@ -32,7 +32,7 @@ const About = () => {
         <p className="text-[#5F5F5F] md:px-40 px-8 text-left  md:text-[24px]  md:my-20 my-8 font-manrope ">
           After transitioning from a background in physiotherapy, I&apos;ve dedicated
           myself to helping young learners navigate the competitive entrance
-          processes for renowned institutions like Welham Girls' School, Mayo
+          processes for renowned institutions like Welham Girls&apos; School, Mayo
           College, Scindia Kanya Vidyalaya, The Doon School, and others. My goal
           is to guide students toward academic success while fostering their
           personal growth, helping them stand out in competitive entrance exams,
