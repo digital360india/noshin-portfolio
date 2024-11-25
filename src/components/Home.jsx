@@ -8,7 +8,7 @@ const Home = () => {
         className="md:w-full md:h-screen h-[917px] md:bg-no-repeat bg-cover bg-bottom md:flex md:justify-evenly mb-28 pt-16 justify-center items-center"
         style={{ backgroundImage: 'url("/Desktopicon.svg")' }}
       >
-        <div className="md:w-[540px]  font-tienne pt-40 px-14  md:px-0 py-5 md:py-0">
+        <div className="md:w-[540px]  font-tienne md:pt-40 pt-20 px-14  md:px-0 py-5 md:py-0">
           <span className="text-[#FFFFFF] md:text-[55px] text-[30px] font-bold">HELLO I AM</span>
           <br />
           <span className="text-[#FFFFFF] md:text-[55px] text-[30px] font-bold py-5 md:py-0 ">
@@ -33,10 +33,12 @@ const Home = () => {
           </div>
           
 
-          <img
+          <Image
             src="/img.svg"
             className="md:h-[622px] md:w-[600px] w-[276px] h-[295px] rounded-full object-cover mt-8"
             alt="Dr. Noshin Aslam"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>

@@ -172,20 +172,21 @@ const Achievements = () => {
 
       <div className=" md:min-h-screen pb-24 bg-[#A34724] w-full md:hidden px-6 ">
    <div className="pt-24">
-      <div className="border-t-8  border-l-8 border-r-8 border-s-2 drop-shadow-lg border-[#C8927C] bg-white p-4">
+      <div className="border-t-4  border-l-4 border-r-4  drop-shadow-lg border-[#C8927C] bg-white p-4">
       <div className=" absolute -top-16 -right-6 bg-[#ebab92] h-[85px] w-[85px] rounded-full border-4 border-white "></div>
 
-          <h2 className="text-center text-[#A34724] text-[20px]   font-semibold font-tienne">
+          <h2 className="text-center text-[#A34724]  text-[20px]  font-semibold font-tienne">
             Teaching Philosophy
           </h2>
           </div>
-        <div className=" relative bg-white shadow-lg  md:w-[770px] md:h-[570] p-8 ">
+        <div className=" relative bg-white shadow-lg border-t-2 border-[#FF480010] md:w-[770px] md:h-[570] p-8 "
+          style={{ boxShadow: "0px 1.3px 7.78px 0px #FF480040" }}>
 
          
           
           <div className=" absolute -bottom-14 -left-4 bg-[#f5bea8] h-[85px] w-[85px] rounded-full border-4 border-white"></div>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-[#5F5F5F] leading-relaxed font-normal ">
             <span className="text-3xl text-[#A34724] font-bold">I</span> believe
             that success in boarding school admissions requires more than just
             academic ability; it requires confidence, clear communication, and
