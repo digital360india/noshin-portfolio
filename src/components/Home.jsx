@@ -5,17 +5,17 @@ const Home = () => {
   return (
     <div>
       <div
-        className="md:w-full md:h-screen h-[917px] md:bg-no-repeat bg-cover bg-bottom md:flex md:justify-evenly mb-28 pt-16 justify-center items-center"
+        className="lg:w-full lg:h-screen h-[917px] lg:bg-no-repeat bg-cover bg-bottom lg:flex lg:justify-evenly mb-28 pt-16 justify-center items-center"
         style={{ backgroundImage: 'url("/Desktopicon.svg")' }}
       >
-        <div className="md:w-[540px]  font-tienne md:pt-40 pt-20 px-14  md:px-0 py-5 md:py-0">
-          <span className="text-[#FFFFFF] md:text-[55px] text-[30px] font-bold">HELLO I AM</span>
+        <div className="lg:w-[540px]  font-tienne lg:pt-40 pt-20 px-14  lg:px-0 py-5 lg:py-0">
+          <span className="text-[#FFFFFF] lg:text-[55px] text-[30px] font-bold">HELLO I AM</span>
           <br />
-          <span className="text-[#FFFFFF] md:text-[55px] text-[30px] font-bold py-5 md:py-0 ">
+          <span className="text-[#FFFFFF] lg:text-[55px] text-[30px] font-bold py-5 lg:py-0 ">
             Dr. Noshin Aslam
           </span>
 
-          <p className="md:text-[30px] text-[15px] text-[#FFFFFF] py-5 md:py-0">
+          <p className="lg:text-[30px] text-[15px] text-[#FFFFFF] py-5 lg:py-0">
             An experienced online educator with a focus on preparing students
             for admission into India&apos;s most prestigious boarding schools.
           </p>
@@ -24,9 +24,9 @@ const Home = () => {
         <div className="relative flex justify-center items-center">
 
           <div className="pt-8">
-          <div className="md:w-[200px] md:h-[200px] px-3 py-3 w-[115px] h-[115px] bg-[#FFFFFF] md:rounded-[40px] rounded-[30px] md:px-7 md:py-4 absolute md:left-[-70px] left-[30px] md:leading-tight">
-            <p className="md:text-[67px] text-[32px] font-bold ">5+</p>
-            <span className="md:text-[22px] text-[10px] font-bold  md:mt-2 md:leading-7 leading-3">
+          <div className="lg:w-[200px] lg:h-[200px] px-3 py-3 w-[115px] h-[115px] bg-[#FFFFFF] lg:rounded-[40px] rounded-[30px] lg:px-7 lg:py-4 absolute lg:left-[-70px] left-[30px] lg:leading-tight">
+            <p className="lg:text-[67px] text-[32px] font-bold ">5+</p>
+            <span className="lg:text-[22px] text-[10px] font-bold  lg:mt-2 lg:leading-7 leading-3">
               years of Guidance & Consultation
             </span>
           </div>
@@ -35,7 +35,7 @@ const Home = () => {
 
           <Image
             src="/img.svg"
-            className="md:h-[622px] md:w-[600px] w-[276px] h-[295px] rounded-full object-cover mt-8"
+            className="lg:h-[622px] lg:w-[600px] w-[276px] h-[295px] rounded-full object-cover mt-8"
             alt="Dr. Noshin Aslam"
             width={1000}
             height={1000}

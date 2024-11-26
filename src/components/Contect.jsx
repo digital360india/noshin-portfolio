@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Contect = () => {
@@ -10,8 +11,8 @@ const Contect = () => {
         </div>
 
         <div className="text-[#5F5F5F]  bg-[#F3F3F3] font-tienne ">
-          <div className=" border border-[#A14622] px-8 md:px-24 py-10 space-y-6 ">
-            <p className="font-bold text-[20px] md:text-[25px] ">Email</p> 
+          <div className=" border border-[#A14622] px-6 md:px-24 py-10 space-y-6 ">
+            <p className="font-bold text-[20px] md:text-[25px] ">Email</p>
             <a href="mailto:Noshinaslam2211@gmail.com">
               Noshinaslam2211@gmail.com
             </a>
@@ -21,13 +22,21 @@ const Contect = () => {
               linkedin.com/in/noshin-aslam-94637b1a4
             </a>
 
-            <p className="font-bold text-[20px] md:text-[25px]">Website</p>
-            <a href="https://www.boardingadmissions.com/">
-              https://www.boardingadmissions.com/
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <p className="font-bold text-[20px] md:text-[25px]">Website</p>
+              <a
+                href="https://www.boardingadmissions.com/"
+                className="break-words w-full md:w-auto"
+              >
+                https://www.boardingadmissions.com
+              </a>
+            </div>
 
-            <p className="font-bold text-[20px] md:text-[25px]">Social Media Links</p>
-            <div className="flex gap-3">
+            <p className="font-bold text-[20px] md:text-[25px]">
+              Social Media Links
+            </p>
+
+            <div className="flex flex-wrap gap-3">
               <Image
                 src="/insta.svg"
                 className="w-[30px] h-[30px]    "
@@ -35,20 +44,29 @@ const Contect = () => {
                 height={1000}
                 alt=""
               />
-              <a href="Instagram: dr.noshin_aslam">
-                Instagram: dr.noshin_aslam
+              <p className="font-bold text-[16px] md:text-[25px]">Instagram:</p>
+              <a
+                href="dr.noshin_aslam"
+                className="break-words w-full md:w-auto"
+              >
+                dr.noshin_aslam
               </a>
             </div>
-            <div className="flex gap-3">
+
+            <div className="flex flex-wrap gap-3">
               <Image
                 src="/facebook.svg"
-                className="w-[30px] h-[30px]    "
+                className="w-[30px] h-[30px]"
                 width={1000}
                 height={1000}
                 alt=""
               />
-              <a href="Facebook:  https://www.facebook.com/noshin.aslam.1">
-                Facebook: https://www.facebook.com/noshin.aslam.1
+              <p className="font-bold text-[16px] md:text-[25px]">Facebook :</p>
+              <a
+                href="https://www.facebook.com/noshin.aslam.1"
+                className="break-words w-full md:w-auto"
+              >
+                https://www.facebook.com/noshin.aslam.1
               </a>
             </div>
           </div>
