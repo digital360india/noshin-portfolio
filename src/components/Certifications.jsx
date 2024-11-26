@@ -33,7 +33,7 @@ const Certifications = () => {
     <>
       <div>
         <div className="bg-[#A44924] text-[#FFFFFF]">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex justify-end pr-20  ">
               <div
                 style={{
@@ -51,18 +51,18 @@ const Certifications = () => {
             </div>
           </div>
 
-          <div className="flex md:space-x-6 space-x-4 pt-6 md:pt-0 md:px-24 px-12 items-center">
+          <div className="flex lg:space-x-6 space-x-4 pt-6 lg:pt-0 lg:px-24 px-12 items-center">
             <div
               style={{ fontFamily: "Times New Roman" }}
-              className="md:text-[50px] text-[24px]"
+              className="lg:text-[50px] text-[24px]"
             >
               <i>Certifications</i>
             </div>
 
-            <div className="md:pt-4  ">
+            <div className="lg:pt-4  ">
               <Image
                 src="/frame.svg"
-                className="md:w-[60px] w-[30px] h-[25px] md:h-[51px]"
+                className="lg:w-[60px] w-[30px] h-[25px] lg:h-[51px]"
                 width={1000}
                 height={1000}
                 alt=""
@@ -70,7 +70,7 @@ const Certifications = () => {
             </div>
           </div>
 
-          <div className="md:pt-4 pt-3 md:px-28 px-14">
+          <div className="lg:pt-4 pt-3 lg:px-28 px-14">
             <Image
               src="/line1.svg"
               className="w-[213px] h-[30px]"
@@ -80,28 +80,28 @@ const Certifications = () => {
             />
           </div>
 
-          <div className="hidden md:flex flex-wrap justify-evenly pb-28">
+          <div className="hidden lg:flex flex-wrap justify-evenly pb-28">
             {qualifactions.map((qualifaction, index) => (
               <div
                 key={index}
-                className="bg-no-repeat w-[242px]  h-[220px]  md:mt-10  md:mx-32  "
+                className="bg-no-repeat w-[242px]  h-[220px]  lg:mt-10  lg:mx-32  "
                 style={{
                   backgroundImage: `url(${qualifaction.image})`,
                 }}
               >
-                <p className="md:w-[150px] w-[86px] md:h-[100px] h-[64px] text-center mx-10 pt-12 text-[18px] ">
+                <p className="lg:w-[150px] w-[86px] lg:h-[100px] h-[64px] text-center mx-10 pt-12 text-[18px] ">
                   {qualifaction.description}
                 </p>
               </div>
             ))}
           </div>
-          <div className=" md:hidden gap-y-6 gap-x-6 grid grid-cols-2 px-12 pb-16 pt-4">
+          <div className=" lg:hidden gap-y-6 gap-x-6 grid grid-cols-2 px-7 py-8">
             {qualifactions.map((qualifaction, index) => (
               <div key={index} className="object-cover w-[160px]  h-[150px]">
                 <div className="relative">
                   <img src={qualifaction.image} alt="" />
                   <div className="absolute inset-0 top-[15%]">
-                    <p className="text-[12px] font-semibold text-center px-10">
+                    <p className="text-[12px] font-semibold text-center px-8">
                       {qualifaction.description}
                     </p>
                   </div>
@@ -111,7 +111,7 @@ const Certifications = () => {
           </div>
         </div>
 
-        <div className="md:hidden flex justify-evenly items-center h-[140px]  bg-[#F3EDE6]">
+        <div className="lg:hidden flex justify-evenly items-center h-[140px]  bg-[#F3EDE6]">
           <div>
             <i className="text-[25px] font-medium">Qualification</i>
           </div>
@@ -122,7 +122,7 @@ const Certifications = () => {
           </div>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <div className="bg-[#F3EDE6] flex justify-between group ">
             <p className="text-[#A14622] text-[40px] mx-36 p-10 cursor-pointer">
               Additional Training
@@ -144,17 +144,17 @@ const Certifications = () => {
           </div>
         </div>
 
-        <div className="md:hidden flex-col space-y-6  py-16 bg-[#A44924]">
+        <div className="lg:hidden flex-col space-y-6  py-16 bg-[#A44924]">
           <div>
             <p className="text-white text-[25px]">Additional Training</p>
           </div>
-          <div className="border-t-4 border-r-4 border-b-4 bg-[#C0542A] border-white w-[383px] text-white p-6">
+          <div className="border-t-4 border-r-4 border-b-4 bg-[#C0542A] border-white w-full text-white p-6">
             <p>Study Strategy </p>
             <p>&</p>
             <p>Time Management for Board Exams</p>
           </div>
             <div className="flex justify-end">
-          <div className="border-t-4 border-l-4 border-b-4 bg-[#C0542A] border-white w-[383px] text-white p-6">
+          <div className="border-t-4 border-l-4 border-b-4 bg-[#C0542A] border-white w-full text-white p-6">
             <p>Behavioral Psychology </p>
             <p>&</p>
             <p>Student Motivation Techniques</p>

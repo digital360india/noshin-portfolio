@@ -24,7 +24,7 @@ const Home = () => {
         <div className="relative flex justify-center items-center">
 
           <div className="pt-8">
-          <div className="lg:w-[200px] lg:h-[200px] px-3 py-3 w-[115px] h-[115px] bg-[#FFFFFF] lg:rounded-[40px] rounded-[30px] lg:px-7 lg:py-4 absolute lg:left-[-70px] left-[30px] lg:leading-tight">
+          <div className="lg:w-[200px] lg:h-[200px] px-3 py-3 w-[115px] h-[115px] bg-[#FFFFFF] lg:rounded-[40px] rounded-[15px] lg:px-7 lg:py-4 absolute lg:left-[-70px] left-[30px] lg:leading-tight">
             <p className="lg:text-[67px] text-[32px] font-bold ">5+</p>
             <span className="lg:text-[22px] text-[10px] font-bold  lg:mt-2 lg:leading-7 leading-3">
               years of Guidance & Consultation
@@ -47,3 +47,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
