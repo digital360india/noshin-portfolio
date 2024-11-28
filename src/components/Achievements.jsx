@@ -97,7 +97,7 @@ const Achievements = () => {
         </div>
 
         <div className="lg:w-[539px] lg:h-[400px] text-center mt-0 justify-center items-center flex flex-col">
-          <div className=" hidden lg:block">
+          <div className="hidden lg:block">
             <div className="flex items-center">
               <h4 className="text-[#A14622] lg:text-[25px] text-[15px] pt-4">
                 Success Stories & Achievements
@@ -115,7 +115,7 @@ const Achievements = () => {
               Successful Admissions
             </span>
 
-            <div className="">
+            <div className="flex justify-center items-center mt-4">
               <Image
                 src="/line.svg"
                 className="w-[213px] h-10"
@@ -126,7 +126,7 @@ const Achievements = () => {
             </div>
           </div>
 
-          <p className="text-[#5F5F5F] text-lg leading-relaxed mt-32">
+          <p className="text-[#5F5F5F] text-lg leading-relaxed md:mt-8 mt-40">
             Over the years, I&apos;ve helped many students secure admission to{" "}
             <span className="font-bold text-[#A14622]">
               Prestigious Boarding Schools
