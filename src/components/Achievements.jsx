@@ -42,7 +42,7 @@ const Achievements = () => {
               height={1000}
               className=" rounded-lg  lg:w-[469px] lg:h-[471px] w-[210px] h-[210px]"
             />
-\
+            \
           </div>
 
           <div className="absolute bottom-0 right-16">
@@ -70,7 +70,7 @@ const Achievements = () => {
             </h4>
           </div>
 
-          <div className="absolute bottom-[-90px] left-[7px] lg:bottom-[-20px] lg:left-[50px] bg-white shadow-lg p-4 w-[214px] h-[100px] rounded-lg">
+          <div className="absolute bottom-[-70px] left-[7px] lg:bottom-[-20px] lg:left-[50px] bg-white shadow-lg p-4 w-[214px] h-[100px] rounded-lg">
             <div className="absolute top-[-35px] left-[-20px]">
               <Image
                 src="/Star.svg"
@@ -148,8 +148,6 @@ const Achievements = () => {
           />
         </div>
       </div>
-
-
 
       <div className=" lg:min-h-screen pb-24 bg-[#A34724] w-full lg:hidden px-6 ">
         <div className="pt-24">
