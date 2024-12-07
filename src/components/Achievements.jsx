@@ -36,20 +36,13 @@ const Achievements = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="relative">
             <Image
-              src="/image.svg"
+              src="/noshinfram.svg"
               alt="Student"
               width={1000}
               height={1000}
-              className="object-cover rounded-lg shadow-lg lg:w-[469px] lg:h-[471px] w-[210px] h-[210px]"
+              className=" rounded-lg  lg:w-[469px] lg:h-[471px] w-[210px] h-[210px]"
             />
-
-            <Image
-              src="/circle.svg"
-              alt="Circle"
-              width={1000}
-              height={1000}
-              className="absolute top-[60%] left-[50%] w-[850px] transform -translate-x-[50%] -translate-y-[50%]"
-            />
+\
           </div>
 
           <div className="absolute bottom-0 right-16">
@@ -67,7 +60,7 @@ const Achievements = () => {
               />
             </div>
 
-            <h4 className="text-sm font-semibold text-[#5F5F5F] leading-snug">
+            <h4 className="text-sm font-semibold text-[#5F5F5F] leading-tight">
               <span className="text-[#A14622] font-bold">Vasundhra Goel</span>{" "}
               secured <span className="text-[#5F5F5F]">admission</span> to{" "}
               <span className="font-bold">Welham Girl&apos;s School</span> with
@@ -156,17 +149,7 @@ const Achievements = () => {
         </div>
       </div>
 
-      {/* <div className=" lg:hidden">
-        <div className="w-full h-[100vh] relative">
-          <Image
-            src="/bgimg2.svg"
-            className="object-cover w-full"
-            width={1000}
-            height={1000}
-            alt=""
-          />
-        </div>
-      </div> */}
+
 
       <div className=" lg:min-h-screen pb-24 bg-[#A34724] w-full lg:hidden px-6 ">
         <div className="pt-24">

@@ -1,24 +1,74 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contect = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    topic: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+  
+    try {
+      const response = await emailjs.send(
+        "service_403m16w",
+        "template_57edpli",
+        formData,
+        "_gcViyaYmp8cIM5j_"
+      );
+      console.log("SUCCESS!", response);
+      alert("Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        topic: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("FAILED...", error);
+      alert("Failed to send the message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+
   return (
     <>
-      <div className="lg:flex justify-center lg:bg-white bg-[#F3F3F3] items-center lg:m-20 px-6 lg:px-0 pt-16 pb-16 lg:pb-0 ">
-        <div className="bg-[#A14622] lg:text-[50px] text-[25px] text-[#FFFFFF] w-full p-10 px-6 lg:px-0 lg:w-[418px] lg:p-8 text-center justify-center -mr-10 z-20 font-tienne">
-          Contact Information
-        </div>
+      <div className="lg:flex justify-center lg:bg-white bg-[#F3F3F3] items-center lg:m-20 px-6 lg:px-32 pt-16 pb-16 lg:pb-0 gap-32 ">
+       
 
         <div className="text-[#5F5F5F]  bg-[#F3F3F3] font-tienne ">
-          <div className=" border border-[#A14622] px-6 lg:px-24 py-10 space-y-6 ">
+         <div className="text-[44px] bg-[#A14622] text-[#F3F3F3] p-2 text-center">
+          Contact Information
+          </div>
+
+          <div className=" border border-[#A14622] px-6 lg:px-20 py-10 space-y-6 ">
+          
             <p className="font-bold text-[20px] lg:text-[25px] ">Email</p>
-            <a href="mailto:Noshinaslam2211@gmail.com">
-              Noshinaslam2211@gmail.com
+            <a href="mailto:Noshinaslam2211@gmail.com"
+            className="text-[20px]">
+              noshinaslam2211@gmail.com
             </a>
 
             <p className="font-bold text-[20px] lg:text-[25px]">LinkedIn</p>
-            <a href="linkedin.com/in/noshin-aslam-94637b1a4">
+            <a href="linkedin.com/in/noshin-aslam-94637b1a4"
+               className="text-[20px]">
               linkedin.com/in/noshin-aslam-94637b1a4
             </a>
 
@@ -26,7 +76,7 @@ const Contect = () => {
               <p className="font-bold text-[20px] lg:text-[25px]">Website</p>
               <a
                 href="https://www.boardingadmissions.com/"
-                className="break-words w-full "
+                className="break-words w-full text-[20px] "
               >
                 https://www.boardingadmissions.com
               </a>
@@ -44,11 +94,8 @@ const Contect = () => {
                 height={1000}
                 alt=""
               />
-              <p className="font-bold text-[16px] lg:text-[25px]">Instagram:</p>
-              <a
-                href="dr.noshin_aslam"
-                className="break-words w-full "
-              >
+              <p className="font-bold text-[20px] lg:text-[25px]">Instagram:</p>
+              <a href="dr.noshin_aslam" className="break-words w-full text-[20px]">
                 dr.noshin_aslam
               </a>
             </div>
@@ -61,13 +108,75 @@ const Contect = () => {
                 height={1000}
                 alt=""
               />
-              <p className="font-bold text-[16px] lg:text-[25px]">Facebook :</p>
+              <p className="font-bold text-[20px] lg:text-[25px]">Facebook :</p>
               <a
                 href="https://www.facebook.com/noshin.aslam.1"
-                className="break-words w-full "
+                className="break-words w-full text-[20px] "
               >
                 https://www.facebook.com/noshin.aslam.1
               </a>
+            </div>
+          </div>
+        </div>
+        <div className=" md:w-auto p-8 md:p-24 lg:p-12">
+          <div className="text-[#A14622] md:text-[56px]  text-[30px]">
+            Contact me
+          </div>
+          <div className="text-[#A14622] md:text-[32px] text-[20px]">
+            Let&apos;s get in Touch
+          </div>
+
+          <div className="">
+            <div className="grid grid-cols-2 py-12">
+              <div className="">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-6 text-white md:w-auto w-[320px]"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="border bg-transparent border-[#A1462299] outline-none  text-black placeholder-[#A1462299] w-[320px] md:w-[520px] h-[45px] text-[20px] rounded-lg p-3"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="border bg-transparent border-[#A1462299] outline-none  text-[#000000] placeholder-[#A1462299] rounded-lg w-[320px] md:w-[520px] h-[45px] text-[20px] p-3"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="topic"
+                    placeholder="Topic"
+                    value={formData.topic}
+                    onChange={handleChange}
+                    className="border bg-transparent border-[#A1462299] outline-none  text-[#000000] placeholder-[#A1462299] md:w-[520px] w-[320px] rounded-lg h-[45px] text-[20px] p-3"
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="border bg-transparent resize-none outline-none border-[#A1462299] text-[#000000] placeholder-[#A1462299] md:w-[520px] w-[320px] h-[125px] rounded-lg text-[20px] p-3"
+                    required
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className={`border bg-[#A14622] w-[320px] md:w-[520px] h-[56px] text-[24px] rounded-lg text-[#F3EFE5]
+                      ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-[#a14622d6]"}
+                      `}
+                  >
+                    {loading ? "Submitting..." : "Submit"}
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

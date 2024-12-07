@@ -11,11 +11,11 @@ const Home = () => {
         <div className="lg:w-[540px]  font-tienne lg:pt-40 pt-20 px-14  lg:px-0 py-5 lg:py-0">
           <span className="text-[#FFFFFF] lg:text-[55px] text-[30px] font-bold">HELLO I AM</span>
           <br />
-          <span className="text-[#FFFFFF] lg:text-[55px] text-[30px] font-bold py-5 lg:py-0 ">
+          <span className="text-[#FFFFFF] lg:text-[50px] text-[30px] font-bold py-5 lg:py-0 ">
             Dr. Noshin Aslam
           </span>
 
-          <p className="lg:text-[30px] text-[15px] text-[#FFFFFF] py-5 lg:py-0">
+          <p className="lg:text-[25px] text-[15px] text-[#FFFFFF] py-5 lg:py-0">
             An experienced online educator with a focus on preparing students
             for admission into India&apos;s most prestigious boarding schools.
           </p>
@@ -34,7 +34,7 @@ const Home = () => {
           
 
           <Image
-            src="/img.svg"
+            src="/noshin.jpg"
             className="lg:h-[622px] lg:w-[600px] w-[276px] h-[295px] rounded-full object-cover mt-8"
             alt="Dr. Noshin Aslam"
             width={1000}
