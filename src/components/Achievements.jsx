@@ -42,7 +42,7 @@ const Achievements = () => {
               height={1000}
               className=" rounded-lg  lg:w-[469px] lg:h-[471px] w-[210px] h-[210px]"
             />
-            \
+            
           </div>
 
           <div className="absolute bottom-0 right-16">
