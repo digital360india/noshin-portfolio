@@ -4,212 +4,112 @@ import React from "react";
 const Skills = () => {
   return (
     <div className="bg-[#F3EDE6]">
-      <div className="text-[#A44924] flex flex-col justify-center items-center pt-16 pb-14 lg:text-[25px] text-[12px]">
+      <div className="text-[#A44924] flex flex-col justify-center items-center pt-10 pb-14 text-[12px] lg:text-[25px] px-4">
         SKILLS & EXPERTIES
         <div className="pt-6">
-          <p className="text-[#555555] lg:text-[40px] text-[20px]">
+          <p className="text-[#555555] text-[20px] lg:text-[40px] text-center">
             What services I Offer...
           </p>
         </div>
         <Image
           src="/line.svg"
           className="w-[213px] h-10"
-          width={1000}
-          height={1000}
+          width={213}
+          height={40}
           alt=""
         />
       </div>
 
-      <div className="bg-[#A44924] pb-10 lg:pb-0">
-        <div className="lg:p-24 lg:w-full lg:sticky top-0 bg-[#A44924] lg:z-10">
-          <hr className="border-t-2 border-white mb-4 lg:w-[1300px]" />
-          <div className="lg:flex lg:justify-center lg:space-y-10">
-            <div className="pt-6">
-              <div className="space-y-5 px-6 lg:px-0">
-                <div className="lg:w-[500px] lg:h-[380px] lg:hidden">
-                  <hr className="border-t-2 border-white mb-4 " />
+      <div className="bg-[#A44924]">
+        {[
+          {
+            number: "01",
+            title: "Competitive Entrance Exam Coaching",
+            points: [
+              "Tailored strategies for entrance exams of top Indian boarding schools (e.g., written exams, IQ tests, and personality tests).",
+              "Focus on subjects like English, Mathematics, General Knowledge, and Logical Reasoning.",
+              "Mock exams and practice tests with feedback",
+            ],
+            image: "/Frame1-2.svg",
+          },
+          {
+            number: "02",
+            title: "Boarding School Interview Preparation",
+            points: [
+              "Personal interview coaching to build confidence, presentation skills, and clarity of thought.",
+              "Role-playing exercises to prepare students for various interview scenarios.",
+              "Guidance on body language, articulation, and responding to tricky questions.",
+            ],
+            image: "/Frame2.svg",
+          },
+          {
+            number: "03",
+            title: "Personality Development & Soft Skills",
+            points: [
+              "Communication, confidence building, and emotional intelligence for students.",
+              "Leadership skills and teamwork.",
+              "Interview etiquette, self - presentation, and grooming",
+            ],
+            image: "/Frame3.svg",
+          },
+          {
+            number: "04",
+            title: "Academic Coaching & Study Strategies",
+            points: [
+              "Time management, memory techniques, and exam preparation.",
+              "Goal - setting and academic motivation.",
+              "Preparing students for high - performance academic environments.",
+            ],
+            image: "/Frame4.svg",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className=" py-10 w-full lg:sticky top-0 bg-[#A44924] lg:z-10  px-10"
+          >
+            <hr className="border-t-2 border-white mb-4 hidden lg:block" />
+            <div className="lg:flex lg:justify-between lg:items-start gap-10">
+              {/* Text Content */}
+              <div className="pt-6 flex-1">
+                <div className="space-y-5">
+                  {/* Mobile Image */}
+                  <div className="lg:hidden mb-4">
+                    <hr className="border-t-2 border-white mb-4" />
+                    <Image
+                      src={item.image}
+                      alt=""
+                      width={1000}
+                      height={1000}
+                      className="w-full max-w-[500px] h-auto mx-auto"
+                    />
+                  </div>
+                  <p className="text-white">{item.number}</p>
+                  <p className="text-white text-[20px] lg:text-[35px] w-[50vw]">
+                    {item.title}
+                  </p>
+                </div>
+                <div className="pt-6">
+                  <div className="text-white space-y-5 text-[15px] lg:text-[25px]">
+                    {item.points.map((point, i) => (
+                      <p key={i}>{point}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
-                  <Image
-                    src="/Frame1.svg"
-                    className="w-[500px] h-[380px]"
-                    width={1000}
-                    height={1000}
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#FFFFFF]">01</p>
-                <p className="text-[#FFFFFF] lg:text-[35px] text-[20px] font-semibold">
-                  Competitive Entrance Exam Coaching
-                </p>
+              {/* Desktop Image */}
+              <div className="hidden lg:block max-w-[400px] w-full h-auto">
+                <Image
+                  src={item.image}
+                  alt=""
+                  width={1000}
+                  height={1000}
+                  className="w-full h-auto"
+                />
               </div>
-              <div className="pt-6 justify-center items-center">
-                <div className="text-[#FFFFFF] lg:w-[810px] lg:text-[25px] text-[15px] space-y-5 px-6 lg:px-0">
-                  <p>
-                    Tailored strategies for entrance exams of top Indian
-                    boarding schools (e.g., written exams, IQ tests, and
-                    personality tests).
-                  </p>
-                  <p>
-                    Focus on subjects like English, Mathematics, General
-                    Knowledge, and Logical Reasoning.
-                  </p>
-                  <p>Mock exams and practice tests with feedback</p>
-                </div>
-              </div>
-            </div>
-            <div className="w-[500px] h-[380px] hidden lg:block">
-              <Image
-                src="/Frame1.svg"
-                className="w-[500px] h-[380px]"
-                width={1000}
-                height={1000}
-                alt=""
-              />
             </div>
           </div>
-        </div>
-
-        <div className="lg:p-24 lg:w-full lg:sticky top-0 bg-[#A44924] lg:z-10">
-          <hr className="border-t-2 border-white mb-4 hidden lg:block lg:w-[1300px]" />
-          <div className="lg:flex lg:justify-center lg:space-y-10">
-            <div className="pt-6">
-              <div className="space-y-5 px-6 lg:px-0">
-                <div className="lg:w-[500px] lg:h-[380px] lg:hidden">
-                  <hr className="border-t-2 border-white mb-4 " />
-
-                  <Image
-                    src="/Frame2.svg"
-                    className="w-[500px] h-[380px]"
-                    width={1000}
-                    height={1000}
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#FFFFFF]">02</p>
-                <p className="text-[#FFFFFF] lg:text-[35px] text-[20px] font-semibold">
-                  Boarding School Interview Preparation{" "}
-                </p>
-              </div>
-              <div className="pt-6 justify-center items-center">
-                <div className="text-[#FFFFFF] lg:w-[810px] lg:text-[25px] text-[15px] space-y-5 px-6 lg:px-0">
-                  <p>
-                    Personal interview coaching to build confidence,
-                    presentation skills, and clarity of thought.
-                  </p>
-                  <p>
-                    Role-playing exercises to prepare students for various
-                    interview scenarios.
-                  </p>
-                  <p>
-                    Guidance on body language, articulation, and responding to
-                    tricky questions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-[500px] h-[380px] hidden lg:block">
-              <Image
-                src="/Frame2.svg"
-                className="w-[500px] h-[380px]"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:p-24 lg:w-full lg:sticky top-0 bg-[#A44924] lg:z-10">
-          <hr className="border-t-2 border-white mb-4 hidden lg:block lg:w-[1300px]" />
-          <div className="lg:flex lg:justify-center lg:space-y-10">
-            <div className="pt-6">
-              <div className="space-y-5 px-6 lg:px-0">
-                <div className="lg:w-[500px] lg:h-[380px] lg:hidden">
-                  <hr className="border-t-2 border-white mb-4 " />
-
-                  <Image
-                    src="/Frame3.svg"
-                    className="w-[500px] h-[380px]"
-                    width={1000}
-                    height={1000}
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#FFFFFF]">03</p>
-                <p className="text-[#FFFFFF] lg:text-[35px] text-[20px] font-semibold">
-                  Personality Development & Soft Skills{" "}
-                </p>
-              </div>
-              <div className="pt-6 justify-center items-center">
-                <div className="text-[#FFFFFF] lg:w-[810px] lg:text-[25px] text-[15px] space-y-5 px-6 lg:px-0">
-                  <p>
-                    Communication, confidence building, and emotional
-                    intelligence for students.
-                  </p>
-                  <p>Leadership skills and teamwork.</p>
-                  <p>Interview etiquette, self - presentation, and grooming</p>
-                </div>
-              </div>
-            </div>
-            <div className="w-[500px] h-[380px] hidden lg:block">
-              <Image
-                src="/Frame3.svg"
-                className="w-[500px] h-[380px]"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:p-24 lg:w-full lg:sticky top-0 bg-[#A44924] lg:z-10">
-          <hr className="border-t-2 border-white mb-4 hidden lg:block lg:w-[1300px]" />
-          <div className="lg:flex lg:justify-center lg:space-y-10">
-            <div className="pt-6">
-              <div className="space-y-5 px-6 lg:px-0">
-
-                <div className="lg:w-[500px] lg:h-[380px] lg:hidden">
-                  <hr className="border-t-2 border-white mb-4 " />
-
-                  <Image
-                    src="/Frame4.svg"
-                    className="w-[500px] h-[380px]"
-                    width={1000}
-                    height={1000}
-                    alt=""
-                  />
-                </div>
-
-                <p className="text-[#FFFFFF]">04</p>
-                <p className="text-[#FFFFFF] lg:text-[35px] text-[20px] font-semibold">
-                  Academic Coaching & Study Strategies{" "}
-                </p>
-              </div>
-              <div className="pt-6 ">
-                <div className="text-[#FFFFFF] lg:w-[810px] lg:text-[25px] text-[15px] space-y-5 px-6 lg:px-0">
-                  <p className="">
-                    Time management, memory techniques, and exam preparation.
-                  </p>
-                  <p>Goal - setting and academic motivation.</p>
-                  <p>
-                    Preparing students for high - performance academic
-                    environments.{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-[500px] h-[380px] hidden lg:block">
-              <Image
-                src="/Frame4.svg"
-                className="w-[500px] h-[380px]"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

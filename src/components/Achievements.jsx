@@ -60,12 +60,12 @@ const Achievements = () => {
               />
             </div>
 
-            <h4 className="text-sm font-semibold text-[#5F5F5F] leading-tight">
-              <span className="text-[#A14622] font-bold">Vasundhra Goel</span>{" "}
+            <h4 className="text-sm font-medium text-[#5F5F5F] leading-tight">
+              <span className="text-[#A14622] ">Vasundhra Goel</span>{" "}
               secured <span className="text-[#5F5F5F]">admission</span> to{" "}
-              <span className="font-bold">Welham Girl&apos;s School</span> with
+              <span className="">Welham Girl&apos;s School</span> with
               a <br />
-              <span className="text-[#A14622] font-bold">Perfect Score</span> in
+              <span className="text-[#A14622] ">Perfect Score</span> in
               their entrance exam and an impressive personal interview.
             </h4>
           </div>
@@ -80,11 +80,11 @@ const Achievements = () => {
                 className="w-[35px] h-[70px]"
               />
             </div>
-            <h4 className="text-sm font-semibold text-[#5F5F5F] leading-snug">
-              <span className="text-[#A14622] font-bold">Arratreca</span>{" "}
+            <h4 className="text-sm font-medium text-[#5F5F5F] ">
+              <span className="text-[#A14622] ">Arratreca</span>{" "}
               received offers from{" "}
-              <span className="font-bold">Mayo College</span> and{" "}
-              <span className="font-bold">Scindia</span>.
+              <span className="">Mayo College</span> and{" "}
+              <span className="">Scindia</span>.
             </h4>
           </div>
         </div>
@@ -121,7 +121,7 @@ const Achievements = () => {
 
           <p className="text-[#5F5F5F] text-lg leading-relaxed md:mt-8 mt-40">
             Over the years, I&apos;ve helped many students secure admission to{" "}
-            <span className="font-bold text-[#A14622]">
+            <span className=" text-[#A14622]">
               Prestigious Boarding Schools
             </span>
             , including Welham Girl&apos;s School, Mayo College, Scindia Kanya
@@ -129,7 +129,7 @@ const Achievements = () => {
           </p>
           <p className="text-[#5F5F5F] text-lg leading-relaxed mt-6">
             After comprehensive preparation sessions focused on{" "}
-            <span className="font-bold text-[#A14622]">
+            <span className=" text-[#A14622]">
               Academics, Personality & Interview Skills
             </span>
             .
@@ -154,7 +154,7 @@ const Achievements = () => {
           <div className="border-t-4  border-l-4 border-r-4  drop-shadow-lg border-[#C8927C] bg-white p-4">
             <div className=" absolute -top-16 -right-6 bg-[#ebab92] h-[85px] w-[85px] rounded-full border-4 border-white "></div>
 
-            <h2 className="text-center text-[#A34724]  text-[20px]  font-semibold font-tienne">
+            <h2 className="text-center text-[#A34724]  text-[20px]   font-tienne">
               Teaching Philosophy
             </h2>
           </div>
@@ -165,7 +165,7 @@ const Achievements = () => {
             <div className=" absolute -bottom-14 -left-4 bg-[#f5bea8] h-[85px] w-[85px] rounded-full border-4 border-white"></div>
 
             <p className="text-[#5F5F5F] leading-relaxed font-normal ">
-              <span className="text-3xl text-[#A34724] font-bold">I</span>{" "}
+              <span className="text-3xl text-[#A34724] ">I</span>{" "}
               believe that success in boarding school admissions requires more
               than just academic ability; it requires confidence, clear
               communication, and the ability to manage pressure. My teaching

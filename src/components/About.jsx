@@ -7,30 +7,20 @@ const About = () => {
       <div className=" ">
         <div className="flex flex-col justify-center items-center lg:space-y-6">
           <h1 className="text-[#A14622] lg:text-2xl ">ABOUT ME</h1>
-          <p className="text-[#555555] font-tienne lg:w-[668px] w-[315px] h-[54px] lg:h-[54px] text-center lg:text-[36px] font-semibold">
+          <p className="text-[#555555] font-tienne lg:w-[668px] w-[315px] h-[54px] lg:h-[54px] text-center lg:text-[36px] font-medium">
             Some core information about me
           </p>
 
           <Image
             src="/line.svg"
-            className="w-[213px] h-10  object-cover"
+            className="w-[213px] h-10 object-cover"
             width={1000}
             height={1000}
-            alt=""
+            alt="line"
           />
         </div>
 
-        <div className="lg:mt-16 mt-8 bg-[#A14622] py-1 ">
-          <Image
-            src="/video.svg"
-            className="lg:w-full w-[415px] lg:h-[550px] h-[144px]"
-            width={1000}
-            height={1000}
-            alt=""
-          />
-        </div>
-
-        {/* <div className="lg:mt-16 mt-8 bg-[#A14622] py-1">
+        <div className="lg:mt-16 mt-8  py-1">
           <video
             className="lg:w-full w-[415px] lg:h-[550px] h-[144px]"
             controls
@@ -38,12 +28,12 @@ const About = () => {
             muted
             loop
           >
-            <source src="/video.mp4" type="video/mp4" />
+            <source src="/video/Boarding Addmission Website video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div> */}
+        </div>
 
-        <p className="text-[#5F5F5F] lg:px-40 px-8 text-left  lg:text-[24px]  lg:my-20 my-8 font-manrope ">
+        <p className="text-[#5F5F5F] lg:px-40 px-8 text-left lg:text-[24px] lg:my-20 my-8 font-manrope">
           After transitioning from a background in physiotherapy, I&apos;ve
           dedicated myself to helping young learners navigate the competitive
           entrance processes for renowned institutions like Welham Girls&apos;

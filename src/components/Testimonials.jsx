@@ -20,14 +20,17 @@ const Testimonials = () => {
           />
         </div>
 
-        <div className="mt-16 bg-[#A14622] py-1 ">
-          <Image
-            src="/video.svg"
-            className="lg:w-full lg:h-[500px] w-[414px] h-[144px]"
-            width={1000}
-            height={1000}
-            alt=""
-          />
+          <div className="lg:mt-16 mt-8  py-1">
+          <video
+            className="lg:w-full w-full lg:h-[550px] h-full"
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/video/Boarding Addmission Website video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
@@ -47,7 +50,7 @@ const Testimonials = () => {
             when facing the panel. I&apos;m now a proud student of Mayo College!
           </p>
           <p className="text-[#FFFFFF] text-[16px] lg:text-[25px] p-4">
-            <span className="font-bold text-[20px] lg:text-[30px]">Vasunndhra Goel </span>
+            <span className="font-medium text-[20px] lg:text-[30px]">Vasunndhra Goel </span>
             (Student)
           </p>
           <p className="text-[#FFFFFF] text-[12px] lg:text-[20px] p-4">6th, Welham Girls&apos;s School</p>
@@ -62,14 +65,14 @@ const Testimonials = () => {
             alt=""
           />
 
-          <p className="text-[#FFFFFF] text-[12px]  lg:text-[25px] p-4">
+          <p className="text-[#FFFFFF] text-[12px]  lg:text-[25px] p-4 leading-tight">
             We struggled to navigate the boarding school admission process until
             we found Dr. Noshin. Her personalized approach helped our daughter
             prepare academically and emotionally, and she received offers from
             multiple top schools!
           </p>
           <p className="text-[#FFFFFF] text-[16px] lg:text-[25px] p-4">
-            <span className="font-bold text-[20px] lg:text-[30px]">Princy Gupta</span>
+            <span className="font-medium text-[20px] lg:text-[30px]">Princy Gupta</span>
             (Parent)
           </p>
           <p className="text-[#FFFFFF] text-[12px] lg:text-[20px] p-4">Amish Gupta (Daughter), 7th, Welham Girls&apos;s School</p>

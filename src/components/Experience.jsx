@@ -70,7 +70,7 @@ const Experience = () => {
         </div>
 
         <div className="lg:w-[1000px] w-[215px] lg:pl-20 pl-10">
-          <h1 className="lg:text-[40px] text-[20px] text-[#000000] font-bold">
+          <h1 className="lg:text-[40px] text-[20px] text-[#000000] ">
             Online Educator & Boarding School Admission Mentor
           </h1>
           
@@ -84,8 +84,8 @@ const Experience = () => {
             key={index}
             
           >
-            <h1 className="lg:text-[30px] text-[15px] font-bold">{Experience.number}</h1>
-            <p className="lg:w-[325px] w-full h-[40px] lg:h-[82px] lg:text-[25px] text-[15px] font-semibold">
+            <h1 className="lg:text-[30px] text-[15px] ">{Experience.number}</h1>
+            <p className="lg:w-[325px] w-full h-[40px] lg:h-[82px] lg:text-[25px] text-[15px] ">
               {Experience.description1}
             </p>
             <p className="text-[#A14622] lg:text-[25px] text-[13px] lg:w-[540px] lg:h-[204px]  w-full  text-left group-hover:text-white">

@@ -44,8 +44,8 @@ const Certifications = () => {
               >
                 <i className="text-[#000000] pl-10">Qualification</i>
                 <p className="text-[#A44924] text-[24px]">
-                  Bachelor of Science in Physiotherapy
-                  <span className="font-bold text-[26px]">(BPT)</span>
+                  Bachelor of Science in Physiotherapy {" "}
+                  <span className="font-medium text-[26px]">(BPT)</span>
                 </p>
               </div>
             </div>
@@ -123,20 +123,23 @@ const Certifications = () => {
         </div>
 
         <div className="hidden lg:block">
-          <div className="bg-[#F3EDE6] flex justify-between group ">
-            <p className="text-[#A14622] text-[40px] mx-36 p-10 cursor-pointer">
+          <div className="bg-[#F3EDE6] group px-6 lg:px-20 py-10">
+            <p className="text-[#A14622] text-[32px] lg:text-[40px] cursor-pointer">
               Additional Training
             </p>
-            <div className="-mt-20 flex justify-end pr-12 gap-10 transition-transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-1000 ease-in-out">
-              <div className="bg-[#C0542A] w-[364px] px-7 py-10 text-[#FFFFFF] text-[20px] border-2 border-white">
-                <p>
+            <div
+              className="-mt-36 flex flex-wrap justify-end gap-6 transition-all duration-700 ease-in-out 
+      transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <div className="bg-[#C0542A] w-full md:w-[280px] px-6 py-8 text-white text-[18px] lg:text-[20px] border-2 border-white">
+                <p className="text-center">
                   Study Strategy <br /> & <br />
                   Time Management for Board Exams
                 </p>
               </div>
-              <div className="bg-[#C0542A] w-[364px] px-7 py-10 text-[#FFFFFF] text-[20px] border-2 border-white">
-                <p>
-                  Behavioral Psychology <br />& <br />
+              <div className="bg-[#C0542A] w-full md:w-[280px] px-6 py-8 text-white text-[18px] lg:text-[20px] border-2 border-white">
+                <p className="text-center">
+                  Behavioral Psychology <br /> & <br />
                   Student Motivation Techniques
                 </p>
               </div>
@@ -153,11 +156,11 @@ const Certifications = () => {
             <p>&</p>
             <p>Time Management for Board Exams</p>
           </div>
-            <div className="flex justify-end">
-          <div className="border-t-4 border-l-4 border-b-4 bg-[#C0542A] border-white w-full text-white p-6">
-            <p>Behavioral Psychology </p>
-            <p>&</p>
-            <p>Student Motivation Techniques</p>
+          <div className="flex justify-end">
+            <div className="border-t-4 border-l-4 border-b-4 bg-[#C0542A] border-white w-full text-white p-6">
+              <p>Behavioral Psychology </p>
+              <p>&</p>
+              <p>Student Motivation Techniques</p>
             </div>
           </div>
         </div>
