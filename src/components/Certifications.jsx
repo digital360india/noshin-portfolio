@@ -4,27 +4,27 @@ import React from "react";
 
 const qualifactions = [
   {
-    image: "/frame1.svg",
+    image: "/Frame-certificate.svg",
     description: "Online Teaching & Instructional Design",
   },
 
   {
-    image: "/frame1.svg",
+    image: "/Frame-certificate.svg",
     description: "Competitive Exam Preparation Techniques",
   },
 
   {
-    image: "/frame1.svg",
+    image: "/Frame-certificate.svg",
     description: "Psychometric Testing & Interview Coaching",
   },
 
   {
-    image: "/frame1.svg",
+    image: "/Frame-certificate.svg",
     description: "Advanced Study Skills for High Achievers",
   },
 
   {
-    image: "/frame1.svg",
+    image: "/Frame-certificate.svg",
     description: "Communication & Soft Skills Development for Students",
   },
 ];
